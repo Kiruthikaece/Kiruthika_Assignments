@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="DomStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <a href="form.html">
+        <input type="button" value="Add profile">
+    </a>
+
+    <div class="card">
+        <div style="height: 320px;text-align: center; background-color: blue;color: white;">
+            <img id="profileImage" src="" alt="Avatar" style="width:160px;position: relative;
+            left: 100px;">
+            <h2 id="profileName"></h2>
+            <p id="profileDesignation"></p>
+            <spn>500 Followers  |  200 Following</spn>
+        </div>
+
+        <div class="divison">
+            <i style="font-size:24px" class="fa">&#xf0e0;</i>
+            <label>Email</label>
+            <div id="profileEmail"></div>
+        </div>
+        <hr>
+
+        <div class="divison">
+            <i style="font-size:24px" class="fa">&#xf10b;</i>
+            <label>Mobile</label>
+            <div id="profilePhoneNumber"></div>
+        </div>
+        <hr>
+
+        <div class="divison">
+            <i style="font-size:24px" class="fa">&#xf081;</i>
+            <label>Twitter</label>
+            <div id="profileTwitter"></div>
+        </div>
+        <hr>
+        <div class="divison">
+            <i style="font-size:24px" class="fa">&#xf09a;</i>
+            <label>Facebook</label>
+            <div id="profileFacebook"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+
+            const name = params.get('name');
+            const email = params.get('email');
+            const designation = params.get('designation');
+            const phoneNumber = params.get('phoneNumber');
+            const twitter = params.get('twitter');
+            const facebook = params.get('facebook');
+            const profileImage = params.get('profileImage');
+
+            if (name && email && designation && phoneNumber) {
+                document.getElementById('profileName').innerText = name;
+                document.getElementById('profileDesignation').innerText = designation;
+                document.getElementById('profileEmail').innerText = email;
+                document.getElementById('profilePhoneNumber').innerText = phoneNumber;
+                document.getElementById('profileTwitter').innerText = twitter;
+                document.getElementById('profileFacebook').innerText = facebook;
+                
+                if (profileImage) {
+                    const imgElement = document.getElementById('profileImage');
+                    imgElement.src = profileImage;
+                    imgElement.style.display = 'block';
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
