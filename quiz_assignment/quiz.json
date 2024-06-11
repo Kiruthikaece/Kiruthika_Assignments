@@ -1,0 +1,11 @@
+[{"id":1,"question":"Choose correct wrapper class","options":["int","short","Long","String"],"answer":"Long"},
+{"id":2,"question":"Which class is synchronized ","options":["ArrayList","TreeSet","HashTable","HashMap"],"answer":"HashTable"},
+{"id":3,"question":"Number of primitive data types in Java are","options":["8","7","5","9"],"answer":"8"},
+{"id":4,"question":"\n Identify the output int ++a = 100; \nSystem.out.println(++a);","options":["100","101","compilerError","none"],"answer":"compilerError"},
+{"id":5,"question":"\nIdentify of output \nString str = “Hellow”; \nSystem.out.println(str.indexOf(‘t));","options":["0","1","-1","2"],"answer":"-1"},
+{"id":6,"question":"Which of the following exception is thrown when divided by zero statement is executed?","options":["NullPointerException","NumberFormatException","InputMisMatchException","ArithmeticException"],"answer":"ArithmeticException"},
+{"id":7,"question":"What does the operator >>>> do?","options":["Right Shift operator","Left shift operator","zero fill left shift","zero fill right shift"],"answer":"zero fill right shift"},
+{"id":8,"question":"Output of Math.floor(3.6)?","options":["3","3.0","4","4.0"],"answer":"3.0"},
+{"id":9,"question":"What is the output of this code? int x = 1;while(x < 4){System.out.println(x); x++;}","options":["1 2 3","2 3 4","1 2 3 4","1"],"answer":"1 2 3"},
+{"id":10,"question":"In Java, what is the default value of an array of integers?","options":["null","0","1","-1"],"answer":"0"}
+]
